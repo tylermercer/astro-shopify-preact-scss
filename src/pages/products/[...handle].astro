@@ -4,7 +4,7 @@ import { setCache } from "../../utils/cache";
 
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import NotFoundLayout from "../../layouts/NotFoundLayout.astro";
-import AddToCartForm from "../../components/AddToCartForm.svelte";
+import AddToCartForm from "../../components/AddToCartForm";
 import ProductImageGallery from "../../components/ProductImageGallery.astro";
 import ProductBreadcrumb from "../../components/ProductBreadcrumb.astro";
 import ProductInformations from "../../components/ProductInformations.astro";
@@ -49,9 +49,9 @@ setCache.short(Astro);
             <div>
               <AddToCartForm
                 client:load
-                variantId={firstVariant?.id}
-                variantQuantityAvailable={firstVariant?.quantityAvailable}
-                variantAvailableForSale={firstVariant?.availableForSale}
+                variantId={firstVariant?.id!}
+                variantQuantityAvailable={firstVariant?.quantityAvailable!}
+                variantAvailableForSale={firstVariant?.availableForSale!}
               />
             </div>
 
