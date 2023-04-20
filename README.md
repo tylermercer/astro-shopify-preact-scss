@@ -4,8 +4,8 @@ This theme was based on @thomasKn's [astro-shopify](https://github.com/thomasKn/
 
 Changes made to that theme (in progress):
 
-* [] Replace Svelte with Preact
-* [] Replace TailwindCSS with SCSS modules
+* [ ] Replace Svelte with Preact
+* [ ] Replace TailwindCSS with SCSS modules
 
 I'm not making these changes because Preact and SCSS are "better"
 than Svelte and Tailwind; I just prefer them more, and am planning
